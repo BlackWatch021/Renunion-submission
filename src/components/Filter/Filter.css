@@ -1,0 +1,229 @@
+.filter_container {
+  width: 100vw;
+  background-color: #d6e8f4;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.filter_container ::selection {
+  color: black;
+  background-color: transparent;
+}
+.filter_wrapper {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  justify-content: space-between;
+}
+
+.filter_type1 {
+  height: 31px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #42a4ff;
+  border-radius: 29px;
+  position: relative;
+}
+
+.filter_input {
+  position: relative;
+  width: 293px;
+  height: 31.54px;
+  border-radius: 36px;
+  background-color: #d9d9d9;
+  outline: none;
+  border: none;
+  text-indent: 20px;
+}
+
+.filter_type1 > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: #56e749;
+}
+
+.filter_type1 > img {
+  width: 10px;
+  height: 8.87px;
+}
+
+.filter_btns {
+  height: 31.54px;
+  width: 70px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4950ff;
+  color: white;
+  border-radius: 29px;
+}
+.filter_btns:last-child {
+  background-color: #ff0000;
+}
+
+.filter_btns:hover,
+.filter_type1:hover {
+  cursor: pointer;
+}
+.filter_input:hover {
+  cursor: text;
+}
+
+.dropDownOptionsSizeShow,
+.dropDownOptionsSizeAmenities {
+  position: absolute;
+  top: 50px;
+  left: 293px;
+  padding: 10px 10px;
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px rgb(204, 204, 204);
+  border: 1px solid black;
+  cursor: default;
+  z-index: 5;
+}
+.dropDownOptionsSizeShow > div,
+.dropDownOptionsSizeAmenities > div {
+  padding: 2px 10px;
+  margin: 5px 3px;
+  font-size: 12px;
+  font-family: sans-serif;
+  border-radius: 39px;
+  border: 4px solid #56e749;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  background-color: white;
+}
+
+.dropDownOptionsSizeShow > div:hover,
+.dropDownOptionsSizeAmenities > div:hover {
+  border: 4px solid rgb(46, 69, 241);
+}
+
+/* if the size option is selected */
+.dropDownOptionsSizeShowSelected {
+  background-color: #16c606 !important;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.dropDownOptionsSizeAmenities {
+  left: 720px;
+}
+.inputCity {
+  position: absolute;
+  top: 50px;
+  left: 414px;
+  width: 287px;
+  /* height: 293px; */
+  max-height: 184px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: auto;
+}
+
+.inputCity::-webkit-scrollbar {
+  width: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-radius: 10px;
+}
+.inputCity::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.inputCity::-webkit-scrollbar-thumb {
+  border-radius: 150px;
+  background-color: black;
+}
+
+.inputCity > div {
+  font-size: 11pt;
+  width: 100%;
+  font-family: monospace;
+  margin: 5px 0px;
+  text-indent: 20px;
+  border-bottom: 1px solid rgb(14, 14, 14);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+.inputCity > div:last-child {
+  margin-bottom: 0px;
+}
+
+.inputCity > div:hover {
+  color: white;
+  background-color: rgb(39, 39, 39);
+}
+
+.inputCity::selection {
+  color: white;
+  background-color: transparent;
+}
+
+input::selection {
+  color: white !important;
+  background-color: black !important;
+}
+
+.filter_price > img {
+  margin-left: 5px;
+}
+
+.showPriceDropDown {
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  left: 890px;
+  font-family: monospace;
+  margin: 5px 0px;
+  text-indent: 20px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.showPriceDropDown > div {
+  font-size: 11pt;
+  /* border-bottom: 1px solid rgb(14, 14, 14);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  width: 100%;
+  font-family: monospace;
+  margin-top: 5px;
+  text-indent: 20px;
+  border-bottom: 1px solid rgb(14, 14, 14);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.showPriceDropDown > div:hover {
+  color: white;
+  background-color: rgb(39, 39, 39);
+  cursor: pointer;
+}
